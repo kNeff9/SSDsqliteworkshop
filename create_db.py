@@ -4,7 +4,7 @@ conn = sqlite3.connect("workshop.db")
 cur = conn.cursor()
 
 cur.execute("""
-    CREATE TABLE movies(title, year, score)
+    CREATE TABLE workouts(id, type, weight, date)
 """)
 
 conn.commit()
