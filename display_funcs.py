@@ -10,10 +10,9 @@ from matplotlib.ticker import MaxNLocator
 
 def fetch_workout_data(cur, workout_type=str):
 
+    # You need to fill this query in
     sql_query = """
-        SELECT date, weight FROM WORKOUTS
-        WHERE type = ?
-        ORDER BY date
+        ...
     """
 
     cur.execute(

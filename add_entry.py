@@ -62,9 +62,9 @@ def add_workout(cur, workout_type, weight, workout_date):
     cur.execute("SELECT COALESCE(MAX(id), 0) + 1 FROM workouts")
     workout_id = cur.fetchone()[0]
 
+    # You need to fill this query in
     sql_query = """
-        INSERT INTO workouts (id, type, weight, date)
-        VALUES (?, ?, ?, ?)
+        ...
     """
 
     # Placeholders keep values separate from the SQL statement.
