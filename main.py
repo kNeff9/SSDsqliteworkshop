@@ -1,18 +1,11 @@
 import sqlite3
+import matplotlib.pyplot as plt
+from display_funcs import *
 
 conn = sqlite3.connect("workshop.db")
 cur = conn.cursor()
 
 
-cur.execute("""
-    SELECT * FROM workouts
-""")
+plot_data(cur)
 
-res = cur.fetchall()
-
-for item in res:
-
-    print(item)
-
-conn.commit()
 conn.close()
